@@ -1,0 +1,13 @@
+Tømmervolum 1000 akk. = 
+CALCULATE(
+	[Tømmervolum 1000],
+	FILTER(
+		CALCULATETABLE(
+			SUMMARIZE(dim_dato,dim_dato[Month Num],dim_dato[Month Name Short]),
+			ALLSELECTED(dim_dato)
+		),
+		ISONORAFTER(
+			dim_dato[Month Num], MAX(dim_dato[Month Num]), DESC,
+			dim_dato[Month Name Short], MAX(dim_dato[Month Name Short]), DESC)
+	)
+)
