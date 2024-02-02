@@ -1,0 +1,14 @@
+Salg kr/m3 = 
+VAR
+    kroner=
+    [Beløp]*-1
+VAR
+//Beregner totalt tømmersalg som divident for alle linjer i rapporten
+salgsvolum=
+    calculate(
+    [Volum],
+    dim_konto_skog[konto_s2]="10",
+    ALL(dim_konto_skog)
+    )
+RETURN
+DIVIDE(kroner,salgsvolum)
