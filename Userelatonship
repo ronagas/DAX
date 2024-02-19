@@ -1,0 +1,5 @@
+Avvirket Volum = 
+CALCULATE(
+    sum('skogtiltak2_prod TILTAK_DELOMR'[Avvirket_volum]),
+    USERELATIONSHIP ( Calender[Date], 'fact_skogtiltak'[Dato_iProduksjon] )
+)
