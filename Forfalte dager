@@ -1,0 +1,2 @@
+Forfalte dager = 
+DATEDIFF(max('skogtiltak2_prod AVVIK'[frist_korrigerende_tiltak]),TODAY(),DAY)
