@@ -1,0 +1,1 @@
+Valgt avvikstype = "Avvikstype: "&SELECTEDVALUE('skogtiltak2_prod AVVIK'[type])
