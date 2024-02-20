@@ -1,0 +1,4 @@
+Dynamisk alder = 
+sumx(dim_jegere,dim_jegere[Alder] 
+- (year(today()) - year(max(Dato[Date])))
+)
