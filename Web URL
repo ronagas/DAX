@@ -1,0 +1,11 @@
+Web URL Faktura = 
+CONCATENATE(
+    CONCATENATE
+    (
+        CONCATENATE("https://admin.storviltportalen.no/_faktura/sf/",
+        min(fact_storvilt[Fakturanummer])),
+        CONCATENATE("-",
+        min(fact_storvilt[Beskrivelse]))
+    ),
+".pdf"
+)
