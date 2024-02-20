@@ -1,0 +1,6 @@
+Kategori_Skutt = 
+LOOKUPVALUE(
+    tKvotekategorier[KategoriSkutt],
+    tKvotekategorier[tp_id],
+    dim_storvilt[KategoriSkutt_tpID]
+    )
