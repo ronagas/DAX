@@ -1,0 +1,5 @@
+Validert regdato = 
+if(
+    max('skogtiltak2_prod AVVIK'[regdato])<=max(Calender[Date]) && min('skogtiltak2_prod AVVIK'[regdato])>=min(Calender[Date]),
+    max('skogtiltak2_prod AVVIK'[regdato])
+    )
